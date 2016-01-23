@@ -1,0 +1,30 @@
+A sample AppEngine golang project layout
+Lightning talk on the directory structure
+23 Jan 2016
+Tags: golang, appengine
+
+Darrel Herbst
+DramaFever
+dherbst@gmail.com
+https://github.com/dherbst
+@darrelherbst
+
+* An example directory layout for AppEngine
+This isn't necessarily the right way to do it, but this has been working for me for a while.
+
+Lots of the examples of appengine with go code have two different imports:
+
+- import "appengine"  _this_is_old_and_should_not_be_used_
+- import "google.golang.org/appengine" *this*is*right*
+
+* do the following
+
+- make a `src/packagename` folder
+- put your app.yaml in the `src/packagename` folder
+- this sets you up for using appengine modules
+
+    App Engine Modules (or just "Modules" hereafter) let developers factor large applications
+    into logical components that can share stateful services and communicate in a secure fashion.
+
+    A deployed module behaves like a microservice. By using multiple modules you can deploy your
+    app as a set of microservices, which is a popular design pattern.
