@@ -28,3 +28,32 @@ Lots of the examples of appengine with go code have two different imports:
 
     A deployed module behaves like a microservice. By using multiple modules you can deploy your
     app as a set of microservices, which is a popular design pattern.
+
+* Directory structure
+
+    .
+    ├── LICENSE
+    ├── README.md
+    └── src
+        ├── dherbst
+        │   ├── app.yaml
+        │   ├── handlers.go
+        │   ├── handlers_test.go
+        │   └── web
+        │        └── index.html
+        ├── golang.org
+        │   └── x
+        └── google.golang.org
+            └── appengine
+
+
+* Set up your project imports
+
+    cd myproject
+    export GOPATH=`pwd`
+    goapp get -u google.golang.org/appengine
+    goapp test mypackagename
+    goapp serve
+
+The example project can be seen:
+.link https://github.com/dherbst/go-appengine-example https://github.com/dherbst/go-appengine-example
