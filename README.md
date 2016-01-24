@@ -29,3 +29,7 @@ I like to set the GOTPATH to the project root directory
 
     cd myproject
     export GOPATH=`pwd`
+
+# slides
+
+https://go-talks.appspot.com/github.com/dherbst/go-appengine-example/doc/go-appengine-example.slide
